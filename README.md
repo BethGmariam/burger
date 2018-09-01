@@ -17,7 +17,7 @@ The app will store every burger in a database, whether devoured or not.
  
 # Acknowledgements:
 
-UofT BootCamp Instructors and assistant instractors.
+UofT BootCamp Instructors and assistant instructors.
  
  
 
