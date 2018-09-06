@@ -1,0 +1,64 @@
+
+body{
+    background-image:url("/assets/img/background.jpg");
+    background-repeat:repeat-y;
+    height:auto;
+    color:whitesmoke;
+}
+.burgerContainer{
+    margin:50px;
+    padding:25px;
+    background-color:black;
+    opacity:0.6;
+}
+
+h1{
+    margin-top:50px;
+    text-align:center;
+    color:green;
+}
+
+#burgerName{
+    font-style:italic;
+    background-color:whitesmoke;
+}
+
+
+#toDevourLi,#toDevourSpan{
+    display:inline-block; 
+}
+#toDevourLi{
+    width:70%;
+    background-color:gold;
+} 
+
+
+.devouredLi{
+    
+    background-color:green;
+    padding:10px;
+    margin:5px 0;
+    text-align:left;
+    list-style:none;
+}
+
+#submitBtn{
+    padding:5px 15px;
+    margin:0 25%;
+    color:black;
+    border-radius:5px;
+    width:50%;
+
+} 
+#toDevourBtn{
+    color:black;
+    background-color:yellow;
+
+
+}
+
+#toDevourBtn:hover,#submitBtn:hover{
+   
+    background-color: #4CAF50; /* Green */
+
+}
