@@ -3,9 +3,14 @@ const express = require("express");
 const router = express.Router();
 var burgers = require("../models/burger.js");
 
-router.get('/', function (req, res, next) {
-    res.render('index', {layout: false});
- });
+router.get("/", function(err,res){
+    burgers.selectAll(function(data){
+        var hbsObj = {
+            burgers:data
+        }
+        res.render("index",hbsObj);
+    })
+});
 
 router.get("/index", function(err,res){
     burgers.selectAll(function(data){
