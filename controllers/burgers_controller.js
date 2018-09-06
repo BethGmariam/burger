@@ -4,6 +4,7 @@ const router = express.Router();
 var burgers = require("../models/burger.js");
 
 router.get("/", function(err,res){
+    if(err) throw err;
     burgers.selectAll(function(data){
         var hbsObj = {
             burgers:data
@@ -13,6 +14,7 @@ router.get("/", function(err,res){
 });
 
 router.get("/index", function(err,res){
+    if(err) throw err;
     burgers.selectAll(function(data){
         var hbsObj = {
             burgers:data
