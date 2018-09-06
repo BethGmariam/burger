@@ -7,6 +7,11 @@ right side of the page.
  
 The app will store every burger in a database, whether devoured or not.
 
+# mainRoute:
+
+ localhost:3000/index 
+ 
+
 # Technology:
 
  Using MVC design pattern, the app uses MySQL, Node, Express, Handlebars and ORM. 

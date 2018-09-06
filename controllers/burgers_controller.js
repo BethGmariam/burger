@@ -23,14 +23,14 @@ router.get("/index", function(err,res){
 
 router.post("/burgers/create", function(req, res) {
     burgers.insertOne(["burger_name","devoured"], [req.body.burgerName,false], function(result) {
-      // Send back the ID of the new quote
-            res.json({ id: result.insertId });
+            // res.json({ id: result.insertId });
+            res.redirect("/index");
    
     });
 
 router.post('/burgers/devour/:id', function (req, res) {
     burgers.updateOne(req.params.id, function() {
-        res.json({ id: result.insertId });
+        // res.json({ id: result.changedRows });
         res.redirect("/index");
 
     });
