@@ -1,8 +1,8 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const app=express();
+var express = require("express");
+var bodyParser = require("body-parser");
+var app=express();
 
-const PORT = process.env.PORT || 3000;
+var  PORT = process.env.PORT || 3000;
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
