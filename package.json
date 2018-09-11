@@ -5,7 +5,7 @@
   "description": "a restaurant app that lets users input the names of burgers they'd like to eat",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
